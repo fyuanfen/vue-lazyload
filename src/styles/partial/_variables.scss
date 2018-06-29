@@ -1,0 +1,343 @@
+// Color palette
+$d-c-primary: #00b8d4;
+$d-c-lightGray: #bdbdbd;
+$d-c-gray: #bdbdbd;
+$d-c-green: #9ccc65;
+
+$d-c-bg-darkOverlay: rgba(32, 32, 32, 0.6);
+$d-c-text-onPrimary: white;
+$d-c-text-onW--dark: #616161;
+$d-c-text-onW--light: #bdbdbd;
+$d-c-text-onW: #9e9e9e;
+$d-c-border: #e0e0e0;
+$d-c-noImage: #ededed;
+$d-c-tagBG: $d-c-border;
+
+$d-c-select-selectedBG: #eee;
+
+$d-c-disabledBG: #f5f5f5;
+$d-c-successBG: #9ccc65;
+$d-c-errorBG: #f27573;
+
+$d-c-vdtError: #c62828;
+
+$d-c--dark-bg: #383838;
+$d-c--dark-lightBG: #474747;
+$d-c--dark-lightActive: #383838;
+$d-c--dark-fogBG: rgba(255, 255, 255, 0.2);
+$d-c--dark-text-dim: rgba(255, 255, 255, 0.5);
+
+// Size defaults
+$d-s-borderRadius: rem(4);
+$d-s-font: rem(14);
+$d-s-font--s: rem(12);
+$d-s-navbarMainH: rem(70);
+
+$d-z-1:   100;
+$d-z-2:   200;
+$d-z-3:   300;
+$d-z-4:   400;
+$d-z-5:   500;
+$d-z-6:   600;
+$d-z-7:   700;
+$d-z-8:   800;
+$d-z-9:   900;
+$d-z-10: 1000;
+
+$d-shadow-2: 0 0 rem(4) 0 rgba(0, 0, 0, 0.15);
+$d-shadow-3: 0 0 rem(5) 0 rgba(0, 0, 0, 0.2);
+// $d-shadow-2--webkit: 0 0 rem(8) 0 rgba(0, 0, 0, 0.15);
+// $d-shadow-3--webkit: 0 0 rem(10) 0 rgba(0, 0, 0, 0.2);
+$d-shadow-text-m: 0 0 rem(4) rgba(0, 0, 0, 0.3);
+
+$d-font-baseSize: 16px;
+$d-font-family: Helvetica, 'Microsoft Yahei', '微软雅黑', 'Hiragino Sans GB', 'PingFang SC', Arial, sans-serif;
+$d-font-weight: 300;
+
+$d-time-xs: 100ms;
+$d-time-s: 150ms;
+$d-time-m: 300ms;
+$d-time-l: 500ms;
+
+//media-query breakpoints
+$d-mq-xxs : 480px;
+$d-mq-xs  : 768px;
+$d-mq-s   : 1024px;
+$d-mq-m   : 1280px;
+$d-mq-l   : 1580px;
+$d-mq-xl  : 1920px;
+
+// @import "bourbon";
+
+/***** config *****/
+// $c-assetsPath: "../assets" !default;
+$c-layoutDebug: false !default;
+
+/***** style defaults *****/
+
+//sizes, all in 'rem' unit
+//$d-s-borderRadius: rem(4);
+$d-s-borderRadiusS: rem(3);
+$d-s-borderRadiusM: rem(5);
+$d-s-borderRadiusL: rem(10);
+$d-s-fontNormal: rem(14);
+$d-s-fontM: rem(20);
+$d-s-fontL: rem(24);
+$d-s-fontXL: rem(30);
+$d-s-ctrlPadding: rem(6) rem(10);
+$d-s-windowPadding: rem(15) rem(20);
+
+/*** new dim ***/
+$d-s-borderRadius: rem(3);
+$d-s-footerMainHeight: rem(94);
+$d-s-navbarMainHeight: rem(70);
+
+/*** editor side components ***/
+$d-s-editorNavbarHeight:rem(70);
+$d-c-editorNavbarBackgroundColor: #383838;
+$d-s-editorPanelWidth: rem(375);
+$d-c-editorPanelBackgroundColor: #383838;
+$d-c-editorFullfillBackgroundColor: #474747;
+$d-c-editorPanelBorderColor: rgba(25, 25, 25, 0.9);
+$d-s-editorComponentWidth: rem(330);
+$d-c-editorComponentText: rgba(255, 255, 255, 0.8);
+$d-c-editorComponentBackgroundColor:#5c5c5c;
+
+//color palette
+/*** new color ***/
+$d-c-main-wcolor: rgba(255, 255, 255, 0.5);
+$d-c-main-wcolor--hover: #fff;
+$d-c-main-bcolor: #262626;
+$d-c-primary: #00b8d4;
+$d-c-primary--hover: #0097a7;
+$d-c-primary--active: #0097a7;
+$d-c-bgColor-dark: #333;
+$d-c-bgColor-dark--hover: #212121;
+
+$d-c-noImage: #AAA;
+
+$d-c-white: #f9f9f9;
+$d-c-whiteDark0: #dddddd;
+$d-c-blue: #2d7dae;
+$d-c-cyan: #1695A3;
+$d-c-lightCyan: #ACF0F2;
+$d-c-orange: #ffac00;
+$d-c-orangeDark: #EB7F00;
+$d-c-gray: #AAA;
+$d-c-green: #4CAF50;
+$d-c-black: #000000;
+
+$d-c-itemFill: #e5e9f2;
+$d-c-bg: #F2F2F2;
+$d-c-textDark: #444;
+$d-c-textDark0: #666;
+$d-c-textLight: $d-c-white;
+$d-c-selection: $d-c-orange;
+$d-c-cardBG: $d-c-white;
+
+// predefined styles
+$d-font-family: Helvetica, 'Hiragino Sans GB', 'PingFang SC','Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+$d-font-weight: 300;
+//shadows
+// 根据material design数值设定
+$d-shadow-lv5: 0 rem(19) rem(38) 0 rgba(0,0,0,0.30), 0 rem(15) rem(12) 0 rgba(0,0,0,0.22);
+$d-shadow-lv4: 0 rem(14) rem(28) 0 rgba(0,0,0,0.25), 0 rem(10) rem(10) 0 rgba(0,0,0,0.22);
+$d-shadow-lv3: 0 rem(6) rem(6) 0 rgba(0, 0, 0, 0.23), 0 rem(10) rem(20) 0 rgba(0, 0, 0, 0.19);
+$d-shadow-lv2: 0 rem(3) rem(6) 0 rgba(0, 0, 0, 0.23), 0 rem(3) rem(6) 0 rgba(0, 0, 0, 0.16);
+$d-shadow-lv1: 0 rem(1) rem(3) 0 rgba(0, 0, 0, 0.12), 0 rem(1) rem(2) 0 rgba(0, 0, 0, 0.24);
+
+$d-shadow-in-lv2: inset 0 rem(2) rem(3) 0 rgba(0, 0, 0, 0.23);
+$d-shadow-in-lv1: inset 0 rem(1) rem(2) 0 rgba(0, 0, 0, 0.15);
+
+$d-shadow-t-lv2: rem(0) rem(2) rem(4) rgba(0, 0, 0, 0.6);
+$d-shadow-t-lv1: rem(0) rem(1) rem(2) rgba(0, 0, 0, 0.4);
+
+$d-shadow-focus: 0 0 rem(1) rem(2) rgba(70,169,210,0.6);
+$d-shadow-focus-good: 0 0 rem(1) rem(2) rgba(0, 210, 14, 0.6);
+$d-shadow-focus-bad: 0 0 rem(1) rem(2) rgba(210, 4, 0, 0.6);
+
+//media-query breakpoints
+$d-mq-xxs : 480px;
+$d-mq-xs  : 768px;
+$d-mq-s   : 1024px;
+$d-mq-m   : 1280px;
+$d-mq-l   : 1580px;
+$d-mq-xl  : 1920px;
+
+// Z-Index Scale, inspired by fat@medium.com:
+// see https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06
+$d-z-1:   100;
+$d-z-2:   200;
+$d-z-3:   300;
+$d-z-4:   400;
+$d-z-5:   500;
+$d-z-6:   600;
+$d-z-7:   700;
+$d-z-8:   800;
+$d-z-9:   900;
+$d-z-10: 1000;
+
+
+// Z-Index Applications
+$d-z-backdrop-5:    $d-z-5;
+$d-z-panel-6:       $d-z-6;
+$d-z-devOverlay-10: $d-z-10;
+
+// Animation variables
+$d-tr-t-xs:300ms;
+$d-tr-t-s: 150ms;
+$d-tr-t-m: 300ms;
+
+// Old guid.scss
+/* Color palette */
+
+$primary: #00b8d4;
+$navbar-background: rgba(32, 32, 32, 0.9);
+$navbar-text: rgba(255, 255, 255, 0.6);
+$filter-background: #ffffff;
+$filter-text: #616161;
+$page-background: #f5f5f5;
+$filter-border: #d9d9d9;
+$info-text: #bdbdbd;
+$skill-tag-background: rgba(255, 255, 255, 0.2);
+$navbar-dmenu-hover: #212121;
+$dropdown-menu-normal: #9e9e9e;
+$file-item-button-hover: #7cb342;
+$file-item-button: #9ccc65;
+$alert: #c62828;
+$component-border: #e0e0e0;
+
+$c-normal-text : #616161;
+$c-gray-text : #9e9e9e;
+
+/* Add on var */
+$nvabar-title: #ffffff;
+$footer-background: #ffffff;
+$warning-background: rgba(256, 0, 0, 0.9);
+
+// /* Add on style */
+// .button.primary {
+//   background: $primary;
+//   color: #ffffff;
+//   border-color: $primary;
+// }
+// .button.primary:active {
+//   background: #1b6eae;
+//   color: #ffffff;
+// }
+
+// /* Text styles */
+// .text-middle{
+//   text-align: center;
+// }
+
+// // label.required:after{
+// //   content: '*';
+// //   color : red;
+// // }
+
+// .main-text {
+//   color : $c-normal-text;
+//   font-size : 24px;
+// }
+
+// .normal-text {
+//   color : $c-normal-text;
+//   font-size : 14px;
+// }
+
+// .info-text{
+//   color : $c-gray-text;
+//   font-size : 12px;
+// }
+
+// .error-text{
+//   color: #c62828;
+//   font-size : 12px;
+// }
+
+// p,span{ 
+//   &.gray {
+//     color : $c-gray-text;
+//   }
+// }
+
+// .Absolute-Center {
+//   margin: auto;
+//   position: absolute;
+//   top: 0; left: 0; bottom: 0; right: 0;
+// }
+
+// Title {
+//   font-family: MicrosoftYaHei, "微软雅黑";
+//   font-size: 24px;
+//   font-weight: normal;
+//   font-style: normal;
+//   font-stretch: normal;
+//   color: $filter-background;
+// }
+
+// .NOTE-Text {
+//   font-family: HelveticaNeue;
+//   font-size: 14px;
+//   font-weight: normal;
+//   font-style: normal;
+//   font-stretch: normal;
+//   color: #555555;
+// }
+
+// button.navbar {
+//   font-family: MicrosoftYaHei, "微软雅黑";
+//   font-size: 14px;
+//   font-weight: normal;
+//   font-style: normal;
+//   font-stretch: normal;
+//   color: $nvabar-title;
+//   background-color: $primary;
+//   border-color: $primary;
+// }
+
+// .Navbar-Text {
+//   font-family: MicrosoftYaHei, "微软雅黑";
+//   font-size: 14px;
+//   font-weight: normal;
+//   font-style: normal;
+//   font-stretch: normal;
+//   color: $navbar-text;
+// }
+
+// .Filter-Text {
+//   font-family: MicrosoftYaHei, "微软雅黑";
+//   font-size: 14px;
+//   font-weight: normal;
+//   font-style: normal;
+//   font-stretch: normal;
+//   color: $filter-text;
+// }
+
+// .Text-Style {
+//   font-family: MicrosoftYaHei, "微软雅黑";
+//   font-size: 12px;
+//   font-weight: normal;
+//   font-style: normal;
+//   font-stretch: normal;
+//   line-height: 1.25;
+//   color: #9e9e9e;
+// }
+
+// .Small-Info-Text {
+//   font-family: Tahoma;
+//   font-size: 12px;
+//   font-weight: normal;
+//   font-style: normal;
+//   font-stretch: normal;
+//   color: #bdbdbd;
+// }
+
+// ul.choose_list{
+//   list-style: none;
+//   padding: 0 0;
+//   >li {
+//     display: inline-block;
+//   }
+// }

@@ -1,0 +1,84 @@
+@import './functions';
+
+@mixin respond-to($size) {
+  @if $size == xxs {
+    @media only screen and (max-width: $d-mq-xxs - 1) { @content; }
+  }
+  @else if $size == xs {
+    @media only screen and (min-width: $d-mq-xxs) and (max-width: $d-mq-xs - 1) { @content; }
+  }
+  @else if $size == s {
+    @media only screen and (min-width: $d-mq-xs) and (max-width: $d-mq-s - 1) { @content; }
+  }
+  @else if $size == m {
+    @media only screen and (min-width: $d-mq-s) and (max-width: $d-mq-m - 1) { @content; }
+  }
+  @else if $size == l {
+    @media only screen and (min-width: $d-mq-m) { @content; }
+  }
+  @else if $size == xl {
+    @media only screen and (min-width: $d-mq-l) { @content; }
+  }
+  @else if $size == xxl {
+    @media only screen and (min-width: $d-mq-xl) { @content; }
+  }
+}
+
+@mixin respond-range($min: null, $max: null) {
+  $min: respond-name-to-px($min);
+  $max: respond-name-to-px($max);
+  @if($min and $max) {
+    @media only screen and (min-width: $min) and (max-width: $max) { @content; }
+  } @else if($min and $max == null) {
+    @media only screen and (min-width: $min) { @content; }
+  } @else if($min == null and $max) {
+    @media only screen and (max-width: $max) { @content; }
+  }
+}
+
+@mixin respond-h-range($min: null, $max: null) {
+  $min: respond-name-to-px($min);
+  $max: respond-name-to-px($max);
+  @if($min and $max) {
+    @media only screen and (min-height: $min) and (max-height: $max) { @content; }
+  } @else if($min and $max == null) {
+    @media only screen and (min-height: $min) { @content; }
+  } @else if($min == null and $max) {
+    @media only screen and (max-height: $max) { @content; }
+  }
+}
+
+@mixin aspect-ratio($width, $height, $innerClass: '.content') {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > #{$innerClass} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+// See: http://stackoverflow.com/questions/2295095/font-size-12px-doesnt-have-effect-in-google-chrome.
+// Also see: http://mjj.logdown.com/posts/39967-set-css-font-size-less-than-12px-in.
+@mixin small-font-size($px) {
+  $size: strip-unit($px);
+  @if $size < 12 {
+    font-size: rem(12);
+    transform: scale($size / 12);
+  } @else {
+    font-size: rem($px);
+  }
+}
+
+@mixin text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

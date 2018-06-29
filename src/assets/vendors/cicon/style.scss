@@ -1,0 +1,3789 @@
+@import "variables";
+
+@font-face {
+  font-family: 'cicon';
+  src:
+    url('#{$icomoon-font-path}/cicon.woff?e3iyyq') format('woff'),
+    url('#{$icomoon-font-path}/cicon.svg?e3iyyq#cicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cicon-"], [class*=" cicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cicon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cicon-lg { font-size: 1.6em; }
+.cicon-2x { font-size: 2em; }
+.cicon-3x { font-size: 3em; }
+.cicon-4x { font-size: 4em; }
+.cicon-5x { font-size: 5em; }
+
+
+.cicon-eye2 {
+  &:before {
+    content: $cicon-eye2;
+  }
+}
+.cicon-fullscreen {
+  &:before {
+    content: $cicon-fullscreen;
+  }
+}
+.cicon-location {
+  &:before {
+    content: $cicon-location;
+  }
+}
+.cicon-model {
+  &:before {
+    content: $cicon-model;
+  }
+}
+.cicon-triangle {
+  &:before {
+    content: $cicon-triangle;
+  }
+}
+.cicon-vertex {
+  &:before {
+    content: $cicon-vertex;
+  }
+}
+.cicon-cube-outline-01 {
+  &:before {
+    content: $cicon-cube-outline-01;
+  }
+}
+.cicon-fullscreen-off {
+  &:before {
+    content: $cicon-fullscreen-off;
+  }
+}
+.cicon-staffpicks {
+  &:before {
+    content: $cicon-staffpicks;
+  }
+}
+.cicon-tags2 {
+  &:before {
+    content: $cicon-tags2;
+  }
+}
+.cicon-categories-01 {
+  &:before {
+    content: $cicon-categories-01;
+  }
+}
+.cicon-features {
+  &:before {
+    content: $cicon-features;
+  }
+}
+.cicon-more {
+  &:before {
+    content: $cicon-more;
+  }
+}
+.cicon-less {
+  &:before {
+    content: $cicon-less;
+  }
+}
+.cicon-followers {
+  &:before {
+    content: $cicon-followers;
+  }
+}
+.cicon-blend {
+  &:before {
+    content: $cicon-blend;
+  }
+}
+.cicon-ion-close-round {
+  &:before {
+    content: $cicon-ion-close-round;
+  }
+}
+.cicon-android-star {
+  &:before {
+    content: $cicon-android-star;
+  }
+}
+.cicon-ion-android-share-alt {
+  &:before {
+    content: $cicon-ion-android-share-alt;
+  }
+}
+.cicon-ion-android-download {
+  &:before {
+    content: $cicon-ion-android-download;
+  }
+}
+.cicon-vr {
+  &:before {
+    content: $cicon-vr;
+  }
+}
+.cicon-glass {
+  &:before {
+    content: $cicon-glass;
+  }
+}
+.cicon-music {
+  &:before {
+    content: $cicon-music;
+  }
+}
+.cicon-search {
+  &:before {
+    content: $cicon-search;
+  }
+}
+.cicon-envelope-o {
+  &:before {
+    content: $cicon-envelope-o;
+  }
+}
+.cicon-heart {
+  &:before {
+    content: $cicon-heart;
+  }
+}
+.cicon-star {
+  &:before {
+    content: $cicon-star;
+  }
+}
+.cicon-star-o {
+  &:before {
+    content: $cicon-star-o;
+  }
+}
+.cicon-user {
+  &:before {
+    content: $cicon-user;
+  }
+}
+.cicon-film {
+  &:before {
+    content: $cicon-film;
+  }
+}
+.cicon-th-large {
+  &:before {
+    content: $cicon-th-large;
+  }
+}
+.cicon-th {
+  &:before {
+    content: $cicon-th;
+  }
+}
+.cicon-th-list {
+  &:before {
+    content: $cicon-th-list;
+  }
+}
+.cicon-check {
+  &:before {
+    content: $cicon-check;
+  }
+}
+.cicon-close {
+  &:before {
+    content: $cicon-close;
+  }
+}
+.cicon-remove {
+  &:before {
+    content: $cicon-remove;
+  }
+}
+.cicon-times {
+  &:before {
+    content: $cicon-times;
+  }
+}
+.cicon-search-plus {
+  &:before {
+    content: $cicon-search-plus;
+  }
+}
+.cicon-search-minus {
+  &:before {
+    content: $cicon-search-minus;
+  }
+}
+.cicon-power-off {
+  &:before {
+    content: $cicon-power-off;
+  }
+}
+.cicon-signal {
+  &:before {
+    content: $cicon-signal;
+  }
+}
+.cicon-cog {
+  &:before {
+    content: $cicon-cog;
+  }
+}
+.cicon-gear {
+  &:before {
+    content: $cicon-gear;
+  }
+}
+.cicon-trash-o {
+  &:before {
+    content: $cicon-trash-o;
+  }
+}
+.cicon-home {
+  &:before {
+    content: $cicon-home;
+  }
+}
+.cicon-file-o {
+  &:before {
+    content: $cicon-file-o;
+  }
+}
+.cicon-clock-o {
+  &:before {
+    content: $cicon-clock-o;
+  }
+}
+.cicon-road {
+  &:before {
+    content: $cicon-road;
+  }
+}
+.cicon-download {
+  &:before {
+    content: $cicon-download;
+  }
+}
+.cicon-arrow-circle-o-down {
+  &:before {
+    content: $cicon-arrow-circle-o-down;
+  }
+}
+.cicon-arrow-circle-o-up {
+  &:before {
+    content: $cicon-arrow-circle-o-up;
+  }
+}
+.cicon-inbox {
+  &:before {
+    content: $cicon-inbox;
+  }
+}
+.cicon-play-circle-o {
+  &:before {
+    content: $cicon-play-circle-o;
+  }
+}
+.cicon-repeat {
+  &:before {
+    content: $cicon-repeat;
+  }
+}
+.cicon-rotate-right {
+  &:before {
+    content: $cicon-rotate-right;
+  }
+}
+.cicon-refresh {
+  &:before {
+    content: $cicon-refresh;
+  }
+}
+.cicon-list-alt {
+  &:before {
+    content: $cicon-list-alt;
+  }
+}
+.cicon-lock {
+  &:before {
+    content: $cicon-lock;
+  }
+}
+.cicon-flag {
+  &:before {
+    content: $cicon-flag;
+  }
+}
+.cicon-headphones {
+  &:before {
+    content: $cicon-headphones;
+  }
+}
+.cicon-volume-off {
+  &:before {
+    content: $cicon-volume-off;
+  }
+}
+.cicon-volume-down {
+  &:before {
+    content: $cicon-volume-down;
+  }
+}
+.cicon-volume-up {
+  &:before {
+    content: $cicon-volume-up;
+  }
+}
+.cicon-qrcode {
+  &:before {
+    content: $cicon-qrcode;
+  }
+}
+.cicon-barcode {
+  &:before {
+    content: $cicon-barcode;
+  }
+}
+.cicon-tag {
+  &:before {
+    content: $cicon-tag;
+  }
+}
+.cicon-tags {
+  &:before {
+    content: $cicon-tags;
+  }
+}
+.cicon-book {
+  &:before {
+    content: $cicon-book;
+  }
+}
+.cicon-bookmark {
+  &:before {
+    content: $cicon-bookmark;
+  }
+}
+.cicon-print {
+  &:before {
+    content: $cicon-print;
+  }
+}
+.cicon-camera {
+  &:before {
+    content: $cicon-camera;
+  }
+}
+.cicon-font {
+  &:before {
+    content: $cicon-font;
+  }
+}
+.cicon-bold {
+  &:before {
+    content: $cicon-bold;
+  }
+}
+.cicon-italic {
+  &:before {
+    content: $cicon-italic;
+  }
+}
+.cicon-text-height {
+  &:before {
+    content: $cicon-text-height;
+  }
+}
+.cicon-text-width {
+  &:before {
+    content: $cicon-text-width;
+  }
+}
+.cicon-align-left {
+  &:before {
+    content: $cicon-align-left;
+  }
+}
+.cicon-align-center {
+  &:before {
+    content: $cicon-align-center;
+  }
+}
+.cicon-align-right {
+  &:before {
+    content: $cicon-align-right;
+  }
+}
+.cicon-align-justify {
+  &:before {
+    content: $cicon-align-justify;
+  }
+}
+.cicon-list {
+  &:before {
+    content: $cicon-list;
+  }
+}
+.cicon-dedent {
+  &:before {
+    content: $cicon-dedent;
+  }
+}
+.cicon-outdent {
+  &:before {
+    content: $cicon-outdent;
+  }
+}
+.cicon-indent {
+  &:before {
+    content: $cicon-indent;
+  }
+}
+.cicon-video-camera {
+  &:before {
+    content: $cicon-video-camera;
+  }
+}
+.cicon-image {
+  &:before {
+    content: $cicon-image;
+  }
+}
+.cicon-photo {
+  &:before {
+    content: $cicon-photo;
+  }
+}
+.cicon-picture-o {
+  &:before {
+    content: $cicon-picture-o;
+  }
+}
+.cicon-pencil {
+  &:before {
+    content: $cicon-pencil;
+  }
+}
+.cicon-map-marker {
+  &:before {
+    content: $cicon-map-marker;
+  }
+}
+.cicon-adjust {
+  &:before {
+    content: $cicon-adjust;
+  }
+}
+.cicon-tint {
+  &:before {
+    content: $cicon-tint;
+  }
+}
+.cicon-edit {
+  &:before {
+    content: $cicon-edit;
+  }
+}
+.cicon-pencil-square-o {
+  &:before {
+    content: $cicon-pencil-square-o;
+  }
+}
+.cicon-share-square-o {
+  &:before {
+    content: $cicon-share-square-o;
+  }
+}
+.cicon-check-square-o {
+  &:before {
+    content: $cicon-check-square-o;
+  }
+}
+.cicon-arrows {
+  &:before {
+    content: $cicon-arrows;
+  }
+}
+.cicon-step-backward {
+  &:before {
+    content: $cicon-step-backward;
+  }
+}
+.cicon-fast-backward {
+  &:before {
+    content: $cicon-fast-backward;
+  }
+}
+.cicon-backward {
+  &:before {
+    content: $cicon-backward;
+  }
+}
+.cicon-play {
+  &:before {
+    content: $cicon-play;
+  }
+}
+.cicon-pause {
+  &:before {
+    content: $cicon-pause;
+  }
+}
+.cicon-stop {
+  &:before {
+    content: $cicon-stop;
+  }
+}
+.cicon-forward {
+  &:before {
+    content: $cicon-forward;
+  }
+}
+.cicon-fast-forward {
+  &:before {
+    content: $cicon-fast-forward;
+  }
+}
+.cicon-step-forward {
+  &:before {
+    content: $cicon-step-forward;
+  }
+}
+.cicon-eject {
+  &:before {
+    content: $cicon-eject;
+  }
+}
+.cicon-chevron-left {
+  &:before {
+    content: $cicon-chevron-left;
+  }
+}
+.cicon-chevron-right {
+  &:before {
+    content: $cicon-chevron-right;
+  }
+}
+.cicon-plus-circle {
+  &:before {
+    content: $cicon-plus-circle;
+  }
+}
+.cicon-minus-circle {
+  &:before {
+    content: $cicon-minus-circle;
+  }
+}
+.cicon-times-circle {
+  &:before {
+    content: $cicon-times-circle;
+  }
+}
+.cicon-check-circle {
+  &:before {
+    content: $cicon-check-circle;
+  }
+}
+.cicon-question-circle {
+  &:before {
+    content: $cicon-question-circle;
+  }
+}
+.cicon-info-circle {
+  &:before {
+    content: $cicon-info-circle;
+  }
+}
+.cicon-crosshairs {
+  &:before {
+    content: $cicon-crosshairs;
+  }
+}
+.cicon-times-circle-o {
+  &:before {
+    content: $cicon-times-circle-o;
+  }
+}
+.cicon-check-circle-o {
+  &:before {
+    content: $cicon-check-circle-o;
+  }
+}
+.cicon-ban {
+  &:before {
+    content: $cicon-ban;
+  }
+}
+.cicon-arrow-left {
+  &:before {
+    content: $cicon-arrow-left;
+  }
+}
+.cicon-arrow-right {
+  &:before {
+    content: $cicon-arrow-right;
+  }
+}
+.cicon-arrow-up {
+  &:before {
+    content: $cicon-arrow-up;
+  }
+}
+.cicon-arrow-down {
+  &:before {
+    content: $cicon-arrow-down;
+  }
+}
+.cicon-mail-forward {
+  &:before {
+    content: $cicon-mail-forward;
+  }
+}
+.cicon-share {
+  &:before {
+    content: $cicon-share;
+  }
+}
+.cicon-expand {
+  &:before {
+    content: $cicon-expand;
+  }
+}
+.cicon-compress {
+  &:before {
+    content: $cicon-compress;
+  }
+}
+.cicon-plus {
+  &:before {
+    content: $cicon-plus;
+  }
+}
+.cicon-minus {
+  &:before {
+    content: $cicon-minus;
+  }
+}
+.cicon-asterisk {
+  &:before {
+    content: $cicon-asterisk;
+  }
+}
+.cicon-exclamation-circle {
+  &:before {
+    content: $cicon-exclamation-circle;
+  }
+}
+.cicon-gift {
+  &:before {
+    content: $cicon-gift;
+  }
+}
+.cicon-leaf {
+  &:before {
+    content: $cicon-leaf;
+  }
+}
+.cicon-fire {
+  &:before {
+    content: $cicon-fire;
+  }
+}
+.cicon-eye {
+  &:before {
+    content: $cicon-eye;
+  }
+}
+.cicon-eye-slash {
+  &:before {
+    content: $cicon-eye-slash;
+  }
+}
+.cicon-exclamation-triangle {
+  &:before {
+    content: $cicon-exclamation-triangle;
+  }
+}
+.cicon-warning {
+  &:before {
+    content: $cicon-warning;
+  }
+}
+.cicon-plane {
+  &:before {
+    content: $cicon-plane;
+  }
+}
+.cicon-calendar {
+  &:before {
+    content: $cicon-calendar;
+  }
+}
+.cicon-random {
+  &:before {
+    content: $cicon-random;
+  }
+}
+.cicon-comment {
+  &:before {
+    content: $cicon-comment;
+  }
+}
+.cicon-magnet {
+  &:before {
+    content: $cicon-magnet;
+  }
+}
+.cicon-chevron-up {
+  &:before {
+    content: $cicon-chevron-up;
+  }
+}
+.cicon-chevron-down {
+  &:before {
+    content: $cicon-chevron-down;
+  }
+}
+.cicon-retweet {
+  &:before {
+    content: $cicon-retweet;
+  }
+}
+.cicon-shopping-cart {
+  &:before {
+    content: $cicon-shopping-cart;
+  }
+}
+.cicon-folder {
+  &:before {
+    content: $cicon-folder;
+  }
+}
+.cicon-folder-open {
+  &:before {
+    content: $cicon-folder-open;
+  }
+}
+.cicon-arrows-v {
+  &:before {
+    content: $cicon-arrows-v;
+  }
+}
+.cicon-arrows-h {
+  &:before {
+    content: $cicon-arrows-h;
+  }
+}
+.cicon-bar-chart {
+  &:before {
+    content: $cicon-bar-chart;
+  }
+}
+.cicon-bar-chart-o {
+  &:before {
+    content: $cicon-bar-chart-o;
+  }
+}
+.cicon-twitter-square {
+  &:before {
+    content: $cicon-twitter-square;
+  }
+}
+.cicon-facebook-square {
+  &:before {
+    content: $cicon-facebook-square;
+  }
+}
+.cicon-camera-retro {
+  &:before {
+    content: $cicon-camera-retro;
+  }
+}
+.cicon-key {
+  &:before {
+    content: $cicon-key;
+  }
+}
+.cicon-cogs {
+  &:before {
+    content: $cicon-cogs;
+  }
+}
+.cicon-gears {
+  &:before {
+    content: $cicon-gears;
+  }
+}
+.cicon-comments {
+  &:before {
+    content: $cicon-comments;
+  }
+}
+.cicon-thumbs-o-up {
+  &:before {
+    content: $cicon-thumbs-o-up;
+  }
+}
+.cicon-thumbs-o-down {
+  &:before {
+    content: $cicon-thumbs-o-down;
+  }
+}
+.cicon-star-half {
+  &:before {
+    content: $cicon-star-half;
+  }
+}
+.cicon-heart-o {
+  &:before {
+    content: $cicon-heart-o;
+  }
+}
+.cicon-sign-out {
+  &:before {
+    content: $cicon-sign-out;
+  }
+}
+.cicon-linkedin-square {
+  &:before {
+    content: $cicon-linkedin-square;
+  }
+}
+.cicon-thumb-tack {
+  &:before {
+    content: $cicon-thumb-tack;
+  }
+}
+.cicon-external-link {
+  &:before {
+    content: $cicon-external-link;
+  }
+}
+.cicon-sign-in {
+  &:before {
+    content: $cicon-sign-in;
+  }
+}
+.cicon-trophy {
+  &:before {
+    content: $cicon-trophy;
+  }
+}
+.cicon-github-square {
+  &:before {
+    content: $cicon-github-square;
+  }
+}
+.cicon-upload {
+  &:before {
+    content: $cicon-upload;
+  }
+}
+.cicon-lemon-o {
+  &:before {
+    content: $cicon-lemon-o;
+  }
+}
+.cicon-phone {
+  &:before {
+    content: $cicon-phone;
+  }
+}
+.cicon-square-o {
+  &:before {
+    content: $cicon-square-o;
+  }
+}
+.cicon-bookmark-o {
+  &:before {
+    content: $cicon-bookmark-o;
+  }
+}
+.cicon-phone-square {
+  &:before {
+    content: $cicon-phone-square;
+  }
+}
+.cicon-twitter {
+  &:before {
+    content: $cicon-twitter;
+  }
+}
+.cicon-facebook {
+  &:before {
+    content: $cicon-facebook;
+  }
+}
+.cicon-facebook-f {
+  &:before {
+    content: $cicon-facebook-f;
+  }
+}
+.cicon-github {
+  &:before {
+    content: $cicon-github;
+  }
+}
+.cicon-unlock {
+  &:before {
+    content: $cicon-unlock;
+  }
+}
+.cicon-credit-card {
+  &:before {
+    content: $cicon-credit-card;
+  }
+}
+.cicon-feed {
+  &:before {
+    content: $cicon-feed;
+  }
+}
+.cicon-rss {
+  &:before {
+    content: $cicon-rss;
+  }
+}
+.cicon-hdd-o {
+  &:before {
+    content: $cicon-hdd-o;
+  }
+}
+.cicon-bullhorn {
+  &:before {
+    content: $cicon-bullhorn;
+  }
+}
+.cicon-bell-o {
+  &:before {
+    content: $cicon-bell-o;
+  }
+}
+.cicon-certificate {
+  &:before {
+    content: $cicon-certificate;
+  }
+}
+.cicon-hand-o-right {
+  &:before {
+    content: $cicon-hand-o-right;
+  }
+}
+.cicon-hand-o-left {
+  &:before {
+    content: $cicon-hand-o-left;
+  }
+}
+.cicon-hand-o-up {
+  &:before {
+    content: $cicon-hand-o-up;
+  }
+}
+.cicon-hand-o-down {
+  &:before {
+    content: $cicon-hand-o-down;
+  }
+}
+.cicon-arrow-circle-left {
+  &:before {
+    content: $cicon-arrow-circle-left;
+  }
+}
+.cicon-arrow-circle-right {
+  &:before {
+    content: $cicon-arrow-circle-right;
+  }
+}
+.cicon-arrow-circle-up {
+  &:before {
+    content: $cicon-arrow-circle-up;
+  }
+}
+.cicon-arrow-circle-down {
+  &:before {
+    content: $cicon-arrow-circle-down;
+  }
+}
+.cicon-globe {
+  &:before {
+    content: $cicon-globe;
+  }
+}
+.cicon-wrench {
+  &:before {
+    content: $cicon-wrench;
+  }
+}
+.cicon-tasks {
+  &:before {
+    content: $cicon-tasks;
+  }
+}
+.cicon-filter {
+  &:before {
+    content: $cicon-filter;
+  }
+}
+.cicon-briefcase {
+  &:before {
+    content: $cicon-briefcase;
+  }
+}
+.cicon-arrows-alt {
+  &:before {
+    content: $cicon-arrows-alt;
+  }
+}
+.cicon-group {
+  &:before {
+    content: $cicon-group;
+  }
+}
+.cicon-users {
+  &:before {
+    content: $cicon-users;
+  }
+}
+.cicon-chain {
+  &:before {
+    content: $cicon-chain;
+  }
+}
+.cicon-link {
+  &:before {
+    content: $cicon-link;
+  }
+}
+.cicon-cloud {
+  &:before {
+    content: $cicon-cloud;
+  }
+}
+.cicon-flask {
+  &:before {
+    content: $cicon-flask;
+  }
+}
+.cicon-cut {
+  &:before {
+    content: $cicon-cut;
+  }
+}
+.cicon-scissors {
+  &:before {
+    content: $cicon-scissors;
+  }
+}
+.cicon-copy {
+  &:before {
+    content: $cicon-copy;
+  }
+}
+.cicon-files-o {
+  &:before {
+    content: $cicon-files-o;
+  }
+}
+.cicon-paperclip {
+  &:before {
+    content: $cicon-paperclip;
+  }
+}
+.cicon-floppy-o {
+  &:before {
+    content: $cicon-floppy-o;
+  }
+}
+.cicon-save {
+  &:before {
+    content: $cicon-save;
+  }
+}
+.cicon-square {
+  &:before {
+    content: $cicon-square;
+  }
+}
+.cicon-bars {
+  &:before {
+    content: $cicon-bars;
+  }
+}
+.cicon-navicon {
+  &:before {
+    content: $cicon-navicon;
+  }
+}
+.cicon-reorder {
+  &:before {
+    content: $cicon-reorder;
+  }
+}
+.cicon-list-ul {
+  &:before {
+    content: $cicon-list-ul;
+  }
+}
+.cicon-list-ol {
+  &:before {
+    content: $cicon-list-ol;
+  }
+}
+.cicon-strikethrough {
+  &:before {
+    content: $cicon-strikethrough;
+  }
+}
+.cicon-underline {
+  &:before {
+    content: $cicon-underline;
+  }
+}
+.cicon-table {
+  &:before {
+    content: $cicon-table;
+  }
+}
+.cicon-magic {
+  &:before {
+    content: $cicon-magic;
+  }
+}
+.cicon-truck {
+  &:before {
+    content: $cicon-truck;
+  }
+}
+.cicon-pinterest {
+  &:before {
+    content: $cicon-pinterest;
+  }
+}
+.cicon-pinterest-square {
+  &:before {
+    content: $cicon-pinterest-square;
+  }
+}
+.cicon-google-plus-square {
+  &:before {
+    content: $cicon-google-plus-square;
+  }
+}
+.cicon-google-plus {
+  &:before {
+    content: $cicon-google-plus;
+  }
+}
+.cicon-money {
+  &:before {
+    content: $cicon-money;
+  }
+}
+.cicon-caret-down {
+  &:before {
+    content: $cicon-caret-down;
+  }
+}
+.cicon-caret-up {
+  &:before {
+    content: $cicon-caret-up;
+  }
+}
+.cicon-caret-left {
+  &:before {
+    content: $cicon-caret-left;
+  }
+}
+.cicon-caret-right {
+  &:before {
+    content: $cicon-caret-right;
+  }
+}
+.cicon-columns {
+  &:before {
+    content: $cicon-columns;
+  }
+}
+.cicon-sort {
+  &:before {
+    content: $cicon-sort;
+  }
+}
+.cicon-unsorted {
+  &:before {
+    content: $cicon-unsorted;
+  }
+}
+.cicon-sort-desc {
+  &:before {
+    content: $cicon-sort-desc;
+  }
+}
+.cicon-sort-down {
+  &:before {
+    content: $cicon-sort-down;
+  }
+}
+.cicon-sort-asc {
+  &:before {
+    content: $cicon-sort-asc;
+  }
+}
+.cicon-sort-up {
+  &:before {
+    content: $cicon-sort-up;
+  }
+}
+.cicon-envelope {
+  &:before {
+    content: $cicon-envelope;
+  }
+}
+.cicon-linkedin {
+  &:before {
+    content: $cicon-linkedin;
+  }
+}
+.cicon-rotate-left {
+  &:before {
+    content: $cicon-rotate-left;
+  }
+}
+.cicon-undo {
+  &:before {
+    content: $cicon-undo;
+  }
+}
+.cicon-gavel {
+  &:before {
+    content: $cicon-gavel;
+  }
+}
+.cicon-legal {
+  &:before {
+    content: $cicon-legal;
+  }
+}
+.cicon-dashboard {
+  &:before {
+    content: $cicon-dashboard;
+  }
+}
+.cicon-tachometer {
+  &:before {
+    content: $cicon-tachometer;
+  }
+}
+.cicon-comment-o {
+  &:before {
+    content: $cicon-comment-o;
+  }
+}
+.cicon-comments-o {
+  &:before {
+    content: $cicon-comments-o;
+  }
+}
+.cicon-bolt {
+  &:before {
+    content: $cicon-bolt;
+  }
+}
+.cicon-flash {
+  &:before {
+    content: $cicon-flash;
+  }
+}
+.cicon-sitemap {
+  &:before {
+    content: $cicon-sitemap;
+  }
+}
+.cicon-umbrella {
+  &:before {
+    content: $cicon-umbrella;
+  }
+}
+.cicon-clipboard {
+  &:before {
+    content: $cicon-clipboard;
+  }
+}
+.cicon-paste {
+  &:before {
+    content: $cicon-paste;
+  }
+}
+.cicon-lightbulb-o {
+  &:before {
+    content: $cicon-lightbulb-o;
+  }
+}
+.cicon-exchange {
+  &:before {
+    content: $cicon-exchange;
+  }
+}
+.cicon-cloud-download {
+  &:before {
+    content: $cicon-cloud-download;
+  }
+}
+.cicon-cloud-upload {
+  &:before {
+    content: $cicon-cloud-upload;
+  }
+}
+.cicon-user-md {
+  &:before {
+    content: $cicon-user-md;
+  }
+}
+.cicon-stethoscope {
+  &:before {
+    content: $cicon-stethoscope;
+  }
+}
+.cicon-suitcase {
+  &:before {
+    content: $cicon-suitcase;
+  }
+}
+.cicon-bell {
+  &:before {
+    content: $cicon-bell;
+  }
+}
+.cicon-coffee {
+  &:before {
+    content: $cicon-coffee;
+  }
+}
+.cicon-cutlery {
+  &:before {
+    content: $cicon-cutlery;
+  }
+}
+.cicon-file-text-o {
+  &:before {
+    content: $cicon-file-text-o;
+  }
+}
+.cicon-building-o {
+  &:before {
+    content: $cicon-building-o;
+  }
+}
+.cicon-hospital-o {
+  &:before {
+    content: $cicon-hospital-o;
+  }
+}
+.cicon-ambulance {
+  &:before {
+    content: $cicon-ambulance;
+  }
+}
+.cicon-medkit {
+  &:before {
+    content: $cicon-medkit;
+  }
+}
+.cicon-fighter-jet {
+  &:before {
+    content: $cicon-fighter-jet;
+  }
+}
+.cicon-beer {
+  &:before {
+    content: $cicon-beer;
+  }
+}
+.cicon-h-square {
+  &:before {
+    content: $cicon-h-square;
+  }
+}
+.cicon-plus-square {
+  &:before {
+    content: $cicon-plus-square;
+  }
+}
+.cicon-angle-double-left {
+  &:before {
+    content: $cicon-angle-double-left;
+  }
+}
+.cicon-angle-double-right {
+  &:before {
+    content: $cicon-angle-double-right;
+  }
+}
+.cicon-angle-double-up {
+  &:before {
+    content: $cicon-angle-double-up;
+  }
+}
+.cicon-angle-double-down {
+  &:before {
+    content: $cicon-angle-double-down;
+  }
+}
+.cicon-angle-left {
+  &:before {
+    content: $cicon-angle-left;
+  }
+}
+.cicon-angle-right {
+  &:before {
+    content: $cicon-angle-right;
+  }
+}
+.cicon-angle-up {
+  &:before {
+    content: $cicon-angle-up;
+  }
+}
+.cicon-angle-down {
+  &:before {
+    content: $cicon-angle-down;
+  }
+}
+.cicon-desktop {
+  &:before {
+    content: $cicon-desktop;
+  }
+}
+.cicon-laptop {
+  &:before {
+    content: $cicon-laptop;
+  }
+}
+.cicon-tablet {
+  &:before {
+    content: $cicon-tablet;
+  }
+}
+.cicon-mobile {
+  &:before {
+    content: $cicon-mobile;
+  }
+}
+.cicon-mobile-phone {
+  &:before {
+    content: $cicon-mobile-phone;
+  }
+}
+.cicon-circle-o {
+  &:before {
+    content: $cicon-circle-o;
+  }
+}
+.cicon-quote-left {
+  &:before {
+    content: $cicon-quote-left;
+  }
+}
+.cicon-quote-right {
+  &:before {
+    content: $cicon-quote-right;
+  }
+}
+.cicon-spinner {
+  &:before {
+    content: $cicon-spinner;
+  }
+}
+.cicon-circle {
+  &:before {
+    content: $cicon-circle;
+  }
+}
+.cicon-mail-reply {
+  &:before {
+    content: $cicon-mail-reply;
+  }
+}
+.cicon-reply {
+  &:before {
+    content: $cicon-reply;
+  }
+}
+.cicon-github-alt {
+  &:before {
+    content: $cicon-github-alt;
+  }
+}
+.cicon-folder-o {
+  &:before {
+    content: $cicon-folder-o;
+  }
+}
+.cicon-folder-open-o {
+  &:before {
+    content: $cicon-folder-open-o;
+  }
+}
+.cicon-smile-o {
+  &:before {
+    content: $cicon-smile-o;
+  }
+}
+.cicon-frown-o {
+  &:before {
+    content: $cicon-frown-o;
+  }
+}
+.cicon-meh-o {
+  &:before {
+    content: $cicon-meh-o;
+  }
+}
+.cicon-gamepad {
+  &:before {
+    content: $cicon-gamepad;
+  }
+}
+.cicon-keyboard-o {
+  &:before {
+    content: $cicon-keyboard-o;
+  }
+}
+.cicon-flag-o {
+  &:before {
+    content: $cicon-flag-o;
+  }
+}
+.cicon-flag-checkered {
+  &:before {
+    content: $cicon-flag-checkered;
+  }
+}
+.cicon-terminal {
+  &:before {
+    content: $cicon-terminal;
+  }
+}
+.cicon-code {
+  &:before {
+    content: $cicon-code;
+  }
+}
+.cicon-mail-reply-all {
+  &:before {
+    content: $cicon-mail-reply-all;
+  }
+}
+.cicon-reply-all {
+  &:before {
+    content: $cicon-reply-all;
+  }
+}
+.cicon-star-half-empty {
+  &:before {
+    content: $cicon-star-half-empty;
+  }
+}
+.cicon-star-half-full {
+  &:before {
+    content: $cicon-star-half-full;
+  }
+}
+.cicon-star-half-o {
+  &:before {
+    content: $cicon-star-half-o;
+  }
+}
+.cicon-location-arrow {
+  &:before {
+    content: $cicon-location-arrow;
+  }
+}
+.cicon-crop {
+  &:before {
+    content: $cicon-crop;
+  }
+}
+.cicon-code-fork {
+  &:before {
+    content: $cicon-code-fork;
+  }
+}
+.cicon-chain-broken {
+  &:before {
+    content: $cicon-chain-broken;
+  }
+}
+.cicon-unlink {
+  &:before {
+    content: $cicon-unlink;
+  }
+}
+.cicon-question {
+  &:before {
+    content: $cicon-question;
+  }
+}
+.cicon-info {
+  &:before {
+    content: $cicon-info;
+  }
+}
+.cicon-exclamation {
+  &:before {
+    content: $cicon-exclamation;
+  }
+}
+.cicon-superscript {
+  &:before {
+    content: $cicon-superscript;
+  }
+}
+.cicon-subscript {
+  &:before {
+    content: $cicon-subscript;
+  }
+}
+.cicon-eraser {
+  &:before {
+    content: $cicon-eraser;
+  }
+}
+.cicon-puzzle-piece {
+  &:before {
+    content: $cicon-puzzle-piece;
+  }
+}
+.cicon-microphone {
+  &:before {
+    content: $cicon-microphone;
+  }
+}
+.cicon-microphone-slash {
+  &:before {
+    content: $cicon-microphone-slash;
+  }
+}
+.cicon-shield {
+  &:before {
+    content: $cicon-shield;
+  }
+}
+.cicon-calendar-o {
+  &:before {
+    content: $cicon-calendar-o;
+  }
+}
+.cicon-fire-extinguisher {
+  &:before {
+    content: $cicon-fire-extinguisher;
+  }
+}
+.cicon-rocket {
+  &:before {
+    content: $cicon-rocket;
+  }
+}
+.cicon-maxcdn {
+  &:before {
+    content: $cicon-maxcdn;
+  }
+}
+.cicon-chevron-circle-left {
+  &:before {
+    content: $cicon-chevron-circle-left;
+  }
+}
+.cicon-chevron-circle-right {
+  &:before {
+    content: $cicon-chevron-circle-right;
+  }
+}
+.cicon-chevron-circle-up {
+  &:before {
+    content: $cicon-chevron-circle-up;
+  }
+}
+.cicon-chevron-circle-down {
+  &:before {
+    content: $cicon-chevron-circle-down;
+  }
+}
+.cicon-html5 {
+  &:before {
+    content: $cicon-html5;
+  }
+}
+.cicon-css3 {
+  &:before {
+    content: $cicon-css3;
+  }
+}
+.cicon-anchor {
+  &:before {
+    content: $cicon-anchor;
+  }
+}
+.cicon-unlock-alt {
+  &:before {
+    content: $cicon-unlock-alt;
+  }
+}
+.cicon-bullseye {
+  &:before {
+    content: $cicon-bullseye;
+  }
+}
+.cicon-ellipsis-h {
+  &:before {
+    content: $cicon-ellipsis-h;
+  }
+}
+.cicon-ellipsis-v {
+  &:before {
+    content: $cicon-ellipsis-v;
+  }
+}
+.cicon-rss-square {
+  &:before {
+    content: $cicon-rss-square;
+  }
+}
+.cicon-play-circle {
+  &:before {
+    content: $cicon-play-circle;
+  }
+}
+.cicon-ticket {
+  &:before {
+    content: $cicon-ticket;
+  }
+}
+.cicon-minus-square {
+  &:before {
+    content: $cicon-minus-square;
+  }
+}
+.cicon-minus-square-o {
+  &:before {
+    content: $cicon-minus-square-o;
+  }
+}
+.cicon-level-up {
+  &:before {
+    content: $cicon-level-up;
+  }
+}
+.cicon-level-down {
+  &:before {
+    content: $cicon-level-down;
+  }
+}
+.cicon-check-square {
+  &:before {
+    content: $cicon-check-square;
+  }
+}
+.cicon-pencil-square {
+  &:before {
+    content: $cicon-pencil-square;
+  }
+}
+.cicon-external-link-square {
+  &:before {
+    content: $cicon-external-link-square;
+  }
+}
+.cicon-share-square {
+  &:before {
+    content: $cicon-share-square;
+  }
+}
+.cicon-compass {
+  &:before {
+    content: $cicon-compass;
+  }
+}
+.cicon-caret-square-o-down {
+  &:before {
+    content: $cicon-caret-square-o-down;
+  }
+}
+.cicon-toggle-down {
+  &:before {
+    content: $cicon-toggle-down;
+  }
+}
+.cicon-caret-square-o-up {
+  &:before {
+    content: $cicon-caret-square-o-up;
+  }
+}
+.cicon-toggle-up {
+  &:before {
+    content: $cicon-toggle-up;
+  }
+}
+.cicon-caret-square-o-right {
+  &:before {
+    content: $cicon-caret-square-o-right;
+  }
+}
+.cicon-toggle-right {
+  &:before {
+    content: $cicon-toggle-right;
+  }
+}
+.cicon-eur {
+  &:before {
+    content: $cicon-eur;
+  }
+}
+.cicon-euro {
+  &:before {
+    content: $cicon-euro;
+  }
+}
+.cicon-gbp {
+  &:before {
+    content: $cicon-gbp;
+  }
+}
+.cicon-dollar {
+  &:before {
+    content: $cicon-dollar;
+  }
+}
+.cicon-usd {
+  &:before {
+    content: $cicon-usd;
+  }
+}
+.cicon-inr {
+  &:before {
+    content: $cicon-inr;
+  }
+}
+.cicon-rupee {
+  &:before {
+    content: $cicon-rupee;
+  }
+}
+.cicon-cny {
+  &:before {
+    content: $cicon-cny;
+  }
+}
+.cicon-jpy {
+  &:before {
+    content: $cicon-jpy;
+  }
+}
+.cicon-rmb {
+  &:before {
+    content: $cicon-rmb;
+  }
+}
+.cicon-yen {
+  &:before {
+    content: $cicon-yen;
+  }
+}
+.cicon-rouble {
+  &:before {
+    content: $cicon-rouble;
+  }
+}
+.cicon-rub {
+  &:before {
+    content: $cicon-rub;
+  }
+}
+.cicon-ruble {
+  &:before {
+    content: $cicon-ruble;
+  }
+}
+.cicon-krw {
+  &:before {
+    content: $cicon-krw;
+  }
+}
+.cicon-won {
+  &:before {
+    content: $cicon-won;
+  }
+}
+.cicon-bitcoin {
+  &:before {
+    content: $cicon-bitcoin;
+  }
+}
+.cicon-btc {
+  &:before {
+    content: $cicon-btc;
+  }
+}
+.cicon-file {
+  &:before {
+    content: $cicon-file;
+  }
+}
+.cicon-file-text {
+  &:before {
+    content: $cicon-file-text;
+  }
+}
+.cicon-sort-alpha-asc {
+  &:before {
+    content: $cicon-sort-alpha-asc;
+  }
+}
+.cicon-sort-alpha-desc {
+  &:before {
+    content: $cicon-sort-alpha-desc;
+  }
+}
+.cicon-sort-amount-asc {
+  &:before {
+    content: $cicon-sort-amount-asc;
+  }
+}
+.cicon-sort-amount-desc {
+  &:before {
+    content: $cicon-sort-amount-desc;
+  }
+}
+.cicon-sort-numeric-asc {
+  &:before {
+    content: $cicon-sort-numeric-asc;
+  }
+}
+.cicon-sort-numeric-desc {
+  &:before {
+    content: $cicon-sort-numeric-desc;
+  }
+}
+.cicon-thumbs-up {
+  &:before {
+    content: $cicon-thumbs-up;
+  }
+}
+.cicon-thumbs-down {
+  &:before {
+    content: $cicon-thumbs-down;
+  }
+}
+.cicon-youtube-square {
+  &:before {
+    content: $cicon-youtube-square;
+  }
+}
+.cicon-youtube {
+  &:before {
+    content: $cicon-youtube;
+  }
+}
+.cicon-xing {
+  &:before {
+    content: $cicon-xing;
+  }
+}
+.cicon-xing-square {
+  &:before {
+    content: $cicon-xing-square;
+  }
+}
+.cicon-youtube-play {
+  &:before {
+    content: $cicon-youtube-play;
+  }
+}
+.cicon-dropbox {
+  &:before {
+    content: $cicon-dropbox;
+  }
+}
+.cicon-stack-overflow {
+  &:before {
+    content: $cicon-stack-overflow;
+  }
+}
+.cicon-instagram {
+  &:before {
+    content: $cicon-instagram;
+  }
+}
+.cicon-flickr {
+  &:before {
+    content: $cicon-flickr;
+  }
+}
+.cicon-adn {
+  &:before {
+    content: $cicon-adn;
+  }
+}
+.cicon-bitbucket {
+  &:before {
+    content: $cicon-bitbucket;
+  }
+}
+.cicon-bitbucket-square {
+  &:before {
+    content: $cicon-bitbucket-square;
+  }
+}
+.cicon-tumblr {
+  &:before {
+    content: $cicon-tumblr;
+  }
+}
+.cicon-tumblr-square {
+  &:before {
+    content: $cicon-tumblr-square;
+  }
+}
+.cicon-long-arrow-down {
+  &:before {
+    content: $cicon-long-arrow-down;
+  }
+}
+.cicon-long-arrow-up {
+  &:before {
+    content: $cicon-long-arrow-up;
+  }
+}
+.cicon-long-arrow-left {
+  &:before {
+    content: $cicon-long-arrow-left;
+  }
+}
+.cicon-long-arrow-right {
+  &:before {
+    content: $cicon-long-arrow-right;
+  }
+}
+.cicon-apple {
+  &:before {
+    content: $cicon-apple;
+  }
+}
+.cicon-windows {
+  &:before {
+    content: $cicon-windows;
+  }
+}
+.cicon-android {
+  &:before {
+    content: $cicon-android;
+  }
+}
+.cicon-linux {
+  &:before {
+    content: $cicon-linux;
+  }
+}
+.cicon-dribbble {
+  &:before {
+    content: $cicon-dribbble;
+  }
+}
+.cicon-skype {
+  &:before {
+    content: $cicon-skype;
+  }
+}
+.cicon-foursquare {
+  &:before {
+    content: $cicon-foursquare;
+  }
+}
+.cicon-trello {
+  &:before {
+    content: $cicon-trello;
+  }
+}
+.cicon-female {
+  &:before {
+    content: $cicon-female;
+  }
+}
+.cicon-male {
+  &:before {
+    content: $cicon-male;
+  }
+}
+.cicon-gittip {
+  &:before {
+    content: $cicon-gittip;
+  }
+}
+.cicon-gratipay {
+  &:before {
+    content: $cicon-gratipay;
+  }
+}
+.cicon-sun-o {
+  &:before {
+    content: $cicon-sun-o;
+  }
+}
+.cicon-moon-o {
+  &:before {
+    content: $cicon-moon-o;
+  }
+}
+.cicon-archive {
+  &:before {
+    content: $cicon-archive;
+  }
+}
+.cicon-bug {
+  &:before {
+    content: $cicon-bug;
+  }
+}
+.cicon-vk {
+  &:before {
+    content: $cicon-vk;
+  }
+}
+.cicon-weibo {
+  &:before {
+    content: $cicon-weibo;
+  }
+}
+.cicon-renren {
+  &:before {
+    content: $cicon-renren;
+  }
+}
+.cicon-pagelines {
+  &:before {
+    content: $cicon-pagelines;
+  }
+}
+.cicon-stack-exchange {
+  &:before {
+    content: $cicon-stack-exchange;
+  }
+}
+.cicon-arrow-circle-o-right {
+  &:before {
+    content: $cicon-arrow-circle-o-right;
+  }
+}
+.cicon-arrow-circle-o-left {
+  &:before {
+    content: $cicon-arrow-circle-o-left;
+  }
+}
+.cicon-caret-square-o-left {
+  &:before {
+    content: $cicon-caret-square-o-left;
+  }
+}
+.cicon-toggle-left {
+  &:before {
+    content: $cicon-toggle-left;
+  }
+}
+.cicon-dot-circle-o {
+  &:before {
+    content: $cicon-dot-circle-o;
+  }
+}
+.cicon-wheelchair {
+  &:before {
+    content: $cicon-wheelchair;
+  }
+}
+.cicon-vimeo-square {
+  &:before {
+    content: $cicon-vimeo-square;
+  }
+}
+.cicon-try {
+  &:before {
+    content: $cicon-try;
+  }
+}
+.cicon-turkish-lira {
+  &:before {
+    content: $cicon-turkish-lira;
+  }
+}
+.cicon-plus-square-o {
+  &:before {
+    content: $cicon-plus-square-o;
+  }
+}
+.cicon-space-shuttle {
+  &:before {
+    content: $cicon-space-shuttle;
+  }
+}
+.cicon-slack {
+  &:before {
+    content: $cicon-slack;
+  }
+}
+.cicon-envelope-square {
+  &:before {
+    content: $cicon-envelope-square;
+  }
+}
+.cicon-wordpress {
+  &:before {
+    content: $cicon-wordpress;
+  }
+}
+.cicon-openid {
+  &:before {
+    content: $cicon-openid;
+  }
+}
+.cicon-bank {
+  &:before {
+    content: $cicon-bank;
+  }
+}
+.cicon-institution {
+  &:before {
+    content: $cicon-institution;
+  }
+}
+.cicon-university {
+  &:before {
+    content: $cicon-university;
+  }
+}
+.cicon-graduation-cap {
+  &:before {
+    content: $cicon-graduation-cap;
+  }
+}
+.cicon-mortar-board {
+  &:before {
+    content: $cicon-mortar-board;
+  }
+}
+.cicon-yahoo {
+  &:before {
+    content: $cicon-yahoo;
+  }
+}
+.cicon-google {
+  &:before {
+    content: $cicon-google;
+  }
+}
+.cicon-reddit {
+  &:before {
+    content: $cicon-reddit;
+  }
+}
+.cicon-reddit-square {
+  &:before {
+    content: $cicon-reddit-square;
+  }
+}
+.cicon-stumbleupon-circle {
+  &:before {
+    content: $cicon-stumbleupon-circle;
+  }
+}
+.cicon-stumbleupon {
+  &:before {
+    content: $cicon-stumbleupon;
+  }
+}
+.cicon-delicious {
+  &:before {
+    content: $cicon-delicious;
+  }
+}
+.cicon-digg {
+  &:before {
+    content: $cicon-digg;
+  }
+}
+.cicon-pied-piper-pp {
+  &:before {
+    content: $cicon-pied-piper-pp;
+  }
+}
+.cicon-pied-piper-alt {
+  &:before {
+    content: $cicon-pied-piper-alt;
+  }
+}
+.cicon-drupal {
+  &:before {
+    content: $cicon-drupal;
+  }
+}
+.cicon-joomla {
+  &:before {
+    content: $cicon-joomla;
+  }
+}
+.cicon-language {
+  &:before {
+    content: $cicon-language;
+  }
+}
+.cicon-fax {
+  &:before {
+    content: $cicon-fax;
+  }
+}
+.cicon-building {
+  &:before {
+    content: $cicon-building;
+  }
+}
+.cicon-child {
+  &:before {
+    content: $cicon-child;
+  }
+}
+.cicon-paw {
+  &:before {
+    content: $cicon-paw;
+  }
+}
+.cicon-spoon {
+  &:before {
+    content: $cicon-spoon;
+  }
+}
+.cicon-cube {
+  &:before {
+    content: $cicon-cube;
+  }
+}
+.cicon-cubes {
+  &:before {
+    content: $cicon-cubes;
+  }
+}
+.cicon-behance {
+  &:before {
+    content: $cicon-behance;
+  }
+}
+.cicon-behance-square {
+  &:before {
+    content: $cicon-behance-square;
+  }
+}
+.cicon-steam {
+  &:before {
+    content: $cicon-steam;
+  }
+}
+.cicon-steam-square {
+  &:before {
+    content: $cicon-steam-square;
+  }
+}
+.cicon-recycle {
+  &:before {
+    content: $cicon-recycle;
+  }
+}
+.cicon-automobile {
+  &:before {
+    content: $cicon-automobile;
+  }
+}
+.cicon-car {
+  &:before {
+    content: $cicon-car;
+  }
+}
+.cicon-cab {
+  &:before {
+    content: $cicon-cab;
+  }
+}
+.cicon-taxi {
+  &:before {
+    content: $cicon-taxi;
+  }
+}
+.cicon-tree {
+  &:before {
+    content: $cicon-tree;
+  }
+}
+.cicon-spotify {
+  &:before {
+    content: $cicon-spotify;
+  }
+}
+.cicon-deviantart {
+  &:before {
+    content: $cicon-deviantart;
+  }
+}
+.cicon-soundcloud {
+  &:before {
+    content: $cicon-soundcloud;
+  }
+}
+.cicon-database {
+  &:before {
+    content: $cicon-database;
+  }
+}
+.cicon-file-pdf-o {
+  &:before {
+    content: $cicon-file-pdf-o;
+  }
+}
+.cicon-file-word-o {
+  &:before {
+    content: $cicon-file-word-o;
+  }
+}
+.cicon-file-excel-o {
+  &:before {
+    content: $cicon-file-excel-o;
+  }
+}
+.cicon-file-powerpoint-o {
+  &:before {
+    content: $cicon-file-powerpoint-o;
+  }
+}
+.cicon-file-image-o {
+  &:before {
+    content: $cicon-file-image-o;
+  }
+}
+.cicon-file-photo-o {
+  &:before {
+    content: $cicon-file-photo-o;
+  }
+}
+.cicon-file-picture-o {
+  &:before {
+    content: $cicon-file-picture-o;
+  }
+}
+.cicon-file-archive-o {
+  &:before {
+    content: $cicon-file-archive-o;
+  }
+}
+.cicon-file-zip-o {
+  &:before {
+    content: $cicon-file-zip-o;
+  }
+}
+.cicon-file-audio-o {
+  &:before {
+    content: $cicon-file-audio-o;
+  }
+}
+.cicon-file-sound-o {
+  &:before {
+    content: $cicon-file-sound-o;
+  }
+}
+.cicon-file-movie-o {
+  &:before {
+    content: $cicon-file-movie-o;
+  }
+}
+.cicon-file-video-o {
+  &:before {
+    content: $cicon-file-video-o;
+  }
+}
+.cicon-file-code-o {
+  &:before {
+    content: $cicon-file-code-o;
+  }
+}
+.cicon-vine {
+  &:before {
+    content: $cicon-vine;
+  }
+}
+.cicon-codepen {
+  &:before {
+    content: $cicon-codepen;
+  }
+}
+.cicon-jsfiddle {
+  &:before {
+    content: $cicon-jsfiddle;
+  }
+}
+.cicon-life-bouy {
+  &:before {
+    content: $cicon-life-bouy;
+  }
+}
+.cicon-life-buoy {
+  &:before {
+    content: $cicon-life-buoy;
+  }
+}
+.cicon-life-ring {
+  &:before {
+    content: $cicon-life-ring;
+  }
+}
+.cicon-life-saver {
+  &:before {
+    content: $cicon-life-saver;
+  }
+}
+.cicon-support {
+  &:before {
+    content: $cicon-support;
+  }
+}
+.cicon-circle-o-notch {
+  &:before {
+    content: $cicon-circle-o-notch;
+  }
+}
+.cicon-ra {
+  &:before {
+    content: $cicon-ra;
+  }
+}
+.cicon-rebel {
+  &:before {
+    content: $cicon-rebel;
+  }
+}
+.cicon-resistance {
+  &:before {
+    content: $cicon-resistance;
+  }
+}
+.cicon-empire {
+  &:before {
+    content: $cicon-empire;
+  }
+}
+.cicon-ge {
+  &:before {
+    content: $cicon-ge;
+  }
+}
+.cicon-git-square {
+  &:before {
+    content: $cicon-git-square;
+  }
+}
+.cicon-git {
+  &:before {
+    content: $cicon-git;
+  }
+}
+.cicon-hacker-news {
+  &:before {
+    content: $cicon-hacker-news;
+  }
+}
+.cicon-y-combinator-square {
+  &:before {
+    content: $cicon-y-combinator-square;
+  }
+}
+.cicon-yc-square {
+  &:before {
+    content: $cicon-yc-square;
+  }
+}
+.cicon-tencent-weibo {
+  &:before {
+    content: $cicon-tencent-weibo;
+  }
+}
+.cicon-qq {
+  &:before {
+    content: $cicon-qq;
+  }
+}
+.cicon-wechat {
+  &:before {
+    content: $cicon-wechat;
+  }
+}
+.cicon-weixin {
+  &:before {
+    content: $cicon-weixin;
+  }
+}
+.cicon-paper-plane {
+  &:before {
+    content: $cicon-paper-plane;
+  }
+}
+.cicon-send {
+  &:before {
+    content: $cicon-send;
+  }
+}
+.cicon-paper-plane-o {
+  &:before {
+    content: $cicon-paper-plane-o;
+  }
+}
+.cicon-send-o {
+  &:before {
+    content: $cicon-send-o;
+  }
+}
+.cicon-history {
+  &:before {
+    content: $cicon-history;
+  }
+}
+.cicon-circle-thin {
+  &:before {
+    content: $cicon-circle-thin;
+  }
+}
+.cicon-header {
+  &:before {
+    content: $cicon-header;
+  }
+}
+.cicon-paragraph {
+  &:before {
+    content: $cicon-paragraph;
+  }
+}
+.cicon-sliders {
+  &:before {
+    content: $cicon-sliders;
+  }
+}
+.cicon-share-alt {
+  &:before {
+    content: $cicon-share-alt;
+  }
+}
+.cicon-share-alt-square {
+  &:before {
+    content: $cicon-share-alt-square;
+  }
+}
+.cicon-bomb {
+  &:before {
+    content: $cicon-bomb;
+  }
+}
+.cicon-futbol-o {
+  &:before {
+    content: $cicon-futbol-o;
+  }
+}
+.cicon-soccer-ball-o {
+  &:before {
+    content: $cicon-soccer-ball-o;
+  }
+}
+.cicon-tty {
+  &:before {
+    content: $cicon-tty;
+  }
+}
+.cicon-binoculars {
+  &:before {
+    content: $cicon-binoculars;
+  }
+}
+.cicon-plug {
+  &:before {
+    content: $cicon-plug;
+  }
+}
+.cicon-slideshare {
+  &:before {
+    content: $cicon-slideshare;
+  }
+}
+.cicon-twitch {
+  &:before {
+    content: $cicon-twitch;
+  }
+}
+.cicon-yelp {
+  &:before {
+    content: $cicon-yelp;
+  }
+}
+.cicon-newspaper-o {
+  &:before {
+    content: $cicon-newspaper-o;
+  }
+}
+.cicon-wifi {
+  &:before {
+    content: $cicon-wifi;
+  }
+}
+.cicon-calculator {
+  &:before {
+    content: $cicon-calculator;
+  }
+}
+.cicon-paypal {
+  &:before {
+    content: $cicon-paypal;
+  }
+}
+.cicon-google-wallet {
+  &:before {
+    content: $cicon-google-wallet;
+  }
+}
+.cicon-cc-visa {
+  &:before {
+    content: $cicon-cc-visa;
+  }
+}
+.cicon-cc-mastercard {
+  &:before {
+    content: $cicon-cc-mastercard;
+  }
+}
+.cicon-cc-discover {
+  &:before {
+    content: $cicon-cc-discover;
+  }
+}
+.cicon-cc-amex {
+  &:before {
+    content: $cicon-cc-amex;
+  }
+}
+.cicon-cc-paypal {
+  &:before {
+    content: $cicon-cc-paypal;
+  }
+}
+.cicon-cc-stripe {
+  &:before {
+    content: $cicon-cc-stripe;
+  }
+}
+.cicon-bell-slash {
+  &:before {
+    content: $cicon-bell-slash;
+  }
+}
+.cicon-bell-slash-o {
+  &:before {
+    content: $cicon-bell-slash-o;
+  }
+}
+.cicon-trash {
+  &:before {
+    content: $cicon-trash;
+  }
+}
+.cicon-copyright {
+  &:before {
+    content: $cicon-copyright;
+  }
+}
+.cicon-at {
+  &:before {
+    content: $cicon-at;
+  }
+}
+.cicon-eyedropper {
+  &:before {
+    content: $cicon-eyedropper;
+  }
+}
+.cicon-paint-brush {
+  &:before {
+    content: $cicon-paint-brush;
+  }
+}
+.cicon-birthday-cake {
+  &:before {
+    content: $cicon-birthday-cake;
+  }
+}
+.cicon-area-chart {
+  &:before {
+    content: $cicon-area-chart;
+  }
+}
+.cicon-pie-chart {
+  &:before {
+    content: $cicon-pie-chart;
+  }
+}
+.cicon-line-chart {
+  &:before {
+    content: $cicon-line-chart;
+  }
+}
+.cicon-lastfm {
+  &:before {
+    content: $cicon-lastfm;
+  }
+}
+.cicon-lastfm-square {
+  &:before {
+    content: $cicon-lastfm-square;
+  }
+}
+.cicon-toggle-off {
+  &:before {
+    content: $cicon-toggle-off;
+  }
+}
+.cicon-toggle-on {
+  &:before {
+    content: $cicon-toggle-on;
+  }
+}
+.cicon-bicycle {
+  &:before {
+    content: $cicon-bicycle;
+  }
+}
+.cicon-bus {
+  &:before {
+    content: $cicon-bus;
+  }
+}
+.cicon-ioxhost {
+  &:before {
+    content: $cicon-ioxhost;
+  }
+}
+.cicon-angellist {
+  &:before {
+    content: $cicon-angellist;
+  }
+}
+.cicon-cc {
+  &:before {
+    content: $cicon-cc;
+  }
+}
+.cicon-ils {
+  &:before {
+    content: $cicon-ils;
+  }
+}
+.cicon-shekel {
+  &:before {
+    content: $cicon-shekel;
+  }
+}
+.cicon-sheqel {
+  &:before {
+    content: $cicon-sheqel;
+  }
+}
+.cicon-meanpath {
+  &:before {
+    content: $cicon-meanpath;
+  }
+}
+.cicon-buysellads {
+  &:before {
+    content: $cicon-buysellads;
+  }
+}
+.cicon-connectdevelop {
+  &:before {
+    content: $cicon-connectdevelop;
+  }
+}
+.cicon-dashcube {
+  &:before {
+    content: $cicon-dashcube;
+  }
+}
+.cicon-forumbee {
+  &:before {
+    content: $cicon-forumbee;
+  }
+}
+.cicon-leanpub {
+  &:before {
+    content: $cicon-leanpub;
+  }
+}
+.cicon-sellsy {
+  &:before {
+    content: $cicon-sellsy;
+  }
+}
+.cicon-shirtsinbulk {
+  &:before {
+    content: $cicon-shirtsinbulk;
+  }
+}
+.cicon-simplybuilt {
+  &:before {
+    content: $cicon-simplybuilt;
+  }
+}
+.cicon-skyatlas {
+  &:before {
+    content: $cicon-skyatlas;
+  }
+}
+.cicon-cart-plus {
+  &:before {
+    content: $cicon-cart-plus;
+  }
+}
+.cicon-cart-arrow-down {
+  &:before {
+    content: $cicon-cart-arrow-down;
+  }
+}
+.cicon-diamond {
+  &:before {
+    content: $cicon-diamond;
+  }
+}
+.cicon-ship {
+  &:before {
+    content: $cicon-ship;
+  }
+}
+.cicon-user-secret {
+  &:before {
+    content: $cicon-user-secret;
+  }
+}
+.cicon-motorcycle {
+  &:before {
+    content: $cicon-motorcycle;
+  }
+}
+.cicon-street-view {
+  &:before {
+    content: $cicon-street-view;
+  }
+}
+.cicon-heartbeat {
+  &:before {
+    content: $cicon-heartbeat;
+  }
+}
+.cicon-venus {
+  &:before {
+    content: $cicon-venus;
+  }
+}
+.cicon-mars {
+  &:before {
+    content: $cicon-mars;
+  }
+}
+.cicon-mercury {
+  &:before {
+    content: $cicon-mercury;
+  }
+}
+.cicon-intersex {
+  &:before {
+    content: $cicon-intersex;
+  }
+}
+.cicon-transgender {
+  &:before {
+    content: $cicon-transgender;
+  }
+}
+.cicon-transgender-alt {
+  &:before {
+    content: $cicon-transgender-alt;
+  }
+}
+.cicon-venus-double {
+  &:before {
+    content: $cicon-venus-double;
+  }
+}
+.cicon-mars-double {
+  &:before {
+    content: $cicon-mars-double;
+  }
+}
+.cicon-venus-mars {
+  &:before {
+    content: $cicon-venus-mars;
+  }
+}
+.cicon-mars-stroke {
+  &:before {
+    content: $cicon-mars-stroke;
+  }
+}
+.cicon-mars-stroke-v {
+  &:before {
+    content: $cicon-mars-stroke-v;
+  }
+}
+.cicon-mars-stroke-h {
+  &:before {
+    content: $cicon-mars-stroke-h;
+  }
+}
+.cicon-neuter {
+  &:before {
+    content: $cicon-neuter;
+  }
+}
+.cicon-genderless {
+  &:before {
+    content: $cicon-genderless;
+  }
+}
+.cicon-facebook-official {
+  &:before {
+    content: $cicon-facebook-official;
+  }
+}
+.cicon-pinterest-p {
+  &:before {
+    content: $cicon-pinterest-p;
+  }
+}
+.cicon-whatsapp {
+  &:before {
+    content: $cicon-whatsapp;
+  }
+}
+.cicon-server {
+  &:before {
+    content: $cicon-server;
+  }
+}
+.cicon-user-plus {
+  &:before {
+    content: $cicon-user-plus;
+  }
+}
+.cicon-user-times {
+  &:before {
+    content: $cicon-user-times;
+  }
+}
+.cicon-bed {
+  &:before {
+    content: $cicon-bed;
+  }
+}
+.cicon-hotel {
+  &:before {
+    content: $cicon-hotel;
+  }
+}
+.cicon-viacoin {
+  &:before {
+    content: $cicon-viacoin;
+  }
+}
+.cicon-train {
+  &:before {
+    content: $cicon-train;
+  }
+}
+.cicon-subway {
+  &:before {
+    content: $cicon-subway;
+  }
+}
+.cicon-medium {
+  &:before {
+    content: $cicon-medium;
+  }
+}
+.cicon-y-combinator {
+  &:before {
+    content: $cicon-y-combinator;
+  }
+}
+.cicon-yc {
+  &:before {
+    content: $cicon-yc;
+  }
+}
+.cicon-optin-monster {
+  &:before {
+    content: $cicon-optin-monster;
+  }
+}
+.cicon-opencart {
+  &:before {
+    content: $cicon-opencart;
+  }
+}
+.cicon-expeditedssl {
+  &:before {
+    content: $cicon-expeditedssl;
+  }
+}
+.cicon-battery-4 {
+  &:before {
+    content: $cicon-battery-4;
+  }
+}
+.cicon-battery-full {
+  &:before {
+    content: $cicon-battery-full;
+  }
+}
+.cicon-battery-3 {
+  &:before {
+    content: $cicon-battery-3;
+  }
+}
+.cicon-battery-three-quarters {
+  &:before {
+    content: $cicon-battery-three-quarters;
+  }
+}
+.cicon-battery-2 {
+  &:before {
+    content: $cicon-battery-2;
+  }
+}
+.cicon-battery-half {
+  &:before {
+    content: $cicon-battery-half;
+  }
+}
+.cicon-battery-1 {
+  &:before {
+    content: $cicon-battery-1;
+  }
+}
+.cicon-battery-quarter {
+  &:before {
+    content: $cicon-battery-quarter;
+  }
+}
+.cicon-battery-0 {
+  &:before {
+    content: $cicon-battery-0;
+  }
+}
+.cicon-battery-empty {
+  &:before {
+    content: $cicon-battery-empty;
+  }
+}
+.cicon-mouse-pointer {
+  &:before {
+    content: $cicon-mouse-pointer;
+  }
+}
+.cicon-i-cursor {
+  &:before {
+    content: $cicon-i-cursor;
+  }
+}
+.cicon-object-group {
+  &:before {
+    content: $cicon-object-group;
+  }
+}
+.cicon-object-ungroup {
+  &:before {
+    content: $cicon-object-ungroup;
+  }
+}
+.cicon-sticky-note {
+  &:before {
+    content: $cicon-sticky-note;
+  }
+}
+.cicon-sticky-note-o {
+  &:before {
+    content: $cicon-sticky-note-o;
+  }
+}
+.cicon-cc-jcb {
+  &:before {
+    content: $cicon-cc-jcb;
+  }
+}
+.cicon-cc-diners-club {
+  &:before {
+    content: $cicon-cc-diners-club;
+  }
+}
+.cicon-clone {
+  &:before {
+    content: $cicon-clone;
+  }
+}
+.cicon-balance-scale {
+  &:before {
+    content: $cicon-balance-scale;
+  }
+}
+.cicon-hourglass-o {
+  &:before {
+    content: $cicon-hourglass-o;
+  }
+}
+.cicon-hourglass-1 {
+  &:before {
+    content: $cicon-hourglass-1;
+  }
+}
+.cicon-hourglass-start {
+  &:before {
+    content: $cicon-hourglass-start;
+  }
+}
+.cicon-hourglass-2 {
+  &:before {
+    content: $cicon-hourglass-2;
+  }
+}
+.cicon-hourglass-half {
+  &:before {
+    content: $cicon-hourglass-half;
+  }
+}
+.cicon-hourglass-3 {
+  &:before {
+    content: $cicon-hourglass-3;
+  }
+}
+.cicon-hourglass-end {
+  &:before {
+    content: $cicon-hourglass-end;
+  }
+}
+.cicon-hourglass {
+  &:before {
+    content: $cicon-hourglass;
+  }
+}
+.cicon-hand-grab-o {
+  &:before {
+    content: $cicon-hand-grab-o;
+  }
+}
+.cicon-hand-rock-o {
+  &:before {
+    content: $cicon-hand-rock-o;
+  }
+}
+.cicon-hand-paper-o {
+  &:before {
+    content: $cicon-hand-paper-o;
+  }
+}
+.cicon-hand-stop-o {
+  &:before {
+    content: $cicon-hand-stop-o;
+  }
+}
+.cicon-hand-scissors-o {
+  &:before {
+    content: $cicon-hand-scissors-o;
+  }
+}
+.cicon-hand-lizard-o {
+  &:before {
+    content: $cicon-hand-lizard-o;
+  }
+}
+.cicon-hand-spock-o {
+  &:before {
+    content: $cicon-hand-spock-o;
+  }
+}
+.cicon-hand-pointer-o {
+  &:before {
+    content: $cicon-hand-pointer-o;
+  }
+}
+.cicon-hand-peace-o {
+  &:before {
+    content: $cicon-hand-peace-o;
+  }
+}
+.cicon-trademark {
+  &:before {
+    content: $cicon-trademark;
+  }
+}
+.cicon-registered {
+  &:before {
+    content: $cicon-registered;
+  }
+}
+.cicon-creative-commons {
+  &:before {
+    content: $cicon-creative-commons;
+  }
+}
+.cicon-gg {
+  &:before {
+    content: $cicon-gg;
+  }
+}
+.cicon-gg-circle {
+  &:before {
+    content: $cicon-gg-circle;
+  }
+}
+.cicon-tripadvisor {
+  &:before {
+    content: $cicon-tripadvisor;
+  }
+}
+.cicon-odnoklassniki {
+  &:before {
+    content: $cicon-odnoklassniki;
+  }
+}
+.cicon-odnoklassniki-square {
+  &:before {
+    content: $cicon-odnoklassniki-square;
+  }
+}
+.cicon-get-pocket {
+  &:before {
+    content: $cicon-get-pocket;
+  }
+}
+.cicon-wikipedia-w {
+  &:before {
+    content: $cicon-wikipedia-w;
+  }
+}
+.cicon-safari {
+  &:before {
+    content: $cicon-safari;
+  }
+}
+.cicon-chrome {
+  &:before {
+    content: $cicon-chrome;
+  }
+}
+.cicon-firefox {
+  &:before {
+    content: $cicon-firefox;
+  }
+}
+.cicon-opera {
+  &:before {
+    content: $cicon-opera;
+  }
+}
+.cicon-internet-explorer {
+  &:before {
+    content: $cicon-internet-explorer;
+  }
+}
+.cicon-television {
+  &:before {
+    content: $cicon-television;
+  }
+}
+.cicon-tv {
+  &:before {
+    content: $cicon-tv;
+  }
+}
+.cicon-contao {
+  &:before {
+    content: $cicon-contao;
+  }
+}
+.cicon-500px {
+  &:before {
+    content: $cicon-500px;
+  }
+}
+.cicon-amazon {
+  &:before {
+    content: $cicon-amazon;
+  }
+}
+.cicon-calendar-plus-o {
+  &:before {
+    content: $cicon-calendar-plus-o;
+  }
+}
+.cicon-calendar-minus-o {
+  &:before {
+    content: $cicon-calendar-minus-o;
+  }
+}
+.cicon-calendar-times-o {
+  &:before {
+    content: $cicon-calendar-times-o;
+  }
+}
+.cicon-calendar-check-o {
+  &:before {
+    content: $cicon-calendar-check-o;
+  }
+}
+.cicon-industry {
+  &:before {
+    content: $cicon-industry;
+  }
+}
+.cicon-map-pin {
+  &:before {
+    content: $cicon-map-pin;
+  }
+}
+.cicon-map-signs {
+  &:before {
+    content: $cicon-map-signs;
+  }
+}
+.cicon-map-o {
+  &:before {
+    content: $cicon-map-o;
+  }
+}
+.cicon-map {
+  &:before {
+    content: $cicon-map;
+  }
+}
+.cicon-commenting {
+  &:before {
+    content: $cicon-commenting;
+  }
+}
+.cicon-commenting-o {
+  &:before {
+    content: $cicon-commenting-o;
+  }
+}
+.cicon-houzz {
+  &:before {
+    content: $cicon-houzz;
+  }
+}
+.cicon-vimeo {
+  &:before {
+    content: $cicon-vimeo;
+  }
+}
+.cicon-black-tie {
+  &:before {
+    content: $cicon-black-tie;
+  }
+}
+.cicon-fonticons {
+  &:before {
+    content: $cicon-fonticons;
+  }
+}
+.cicon-reddit-alien {
+  &:before {
+    content: $cicon-reddit-alien;
+  }
+}
+.cicon-edge {
+  &:before {
+    content: $cicon-edge;
+  }
+}
+.cicon-credit-card-alt {
+  &:before {
+    content: $cicon-credit-card-alt;
+  }
+}
+.cicon-codiepie {
+  &:before {
+    content: $cicon-codiepie;
+  }
+}
+.cicon-modx {
+  &:before {
+    content: $cicon-modx;
+  }
+}
+.cicon-fort-awesome {
+  &:before {
+    content: $cicon-fort-awesome;
+  }
+}
+.cicon-usb {
+  &:before {
+    content: $cicon-usb;
+  }
+}
+.cicon-product-hunt {
+  &:before {
+    content: $cicon-product-hunt;
+  }
+}
+.cicon-mixcloud {
+  &:before {
+    content: $cicon-mixcloud;
+  }
+}
+.cicon-scribd {
+  &:before {
+    content: $cicon-scribd;
+  }
+}
+.cicon-pause-circle {
+  &:before {
+    content: $cicon-pause-circle;
+  }
+}
+.cicon-pause-circle-o {
+  &:before {
+    content: $cicon-pause-circle-o;
+  }
+}
+.cicon-stop-circle {
+  &:before {
+    content: $cicon-stop-circle;
+  }
+}
+.cicon-stop-circle-o {
+  &:before {
+    content: $cicon-stop-circle-o;
+  }
+}
+.cicon-shopping-bag {
+  &:before {
+    content: $cicon-shopping-bag;
+  }
+}
+.cicon-shopping-basket {
+  &:before {
+    content: $cicon-shopping-basket;
+  }
+}
+.cicon-hashtag {
+  &:before {
+    content: $cicon-hashtag;
+  }
+}
+.cicon-bluetooth {
+  &:before {
+    content: $cicon-bluetooth;
+  }
+}
+.cicon-bluetooth-b {
+  &:before {
+    content: $cicon-bluetooth-b;
+  }
+}
+.cicon-percent {
+  &:before {
+    content: $cicon-percent;
+  }
+}
+.cicon-gitlab {
+  &:before {
+    content: $cicon-gitlab;
+  }
+}
+.cicon-wpbeginner {
+  &:before {
+    content: $cicon-wpbeginner;
+  }
+}
+.cicon-wpforms {
+  &:before {
+    content: $cicon-wpforms;
+  }
+}
+.cicon-envira {
+  &:before {
+    content: $cicon-envira;
+  }
+}
+.cicon-universal-access {
+  &:before {
+    content: $cicon-universal-access;
+  }
+}
+.cicon-wheelchair-alt {
+  &:before {
+    content: $cicon-wheelchair-alt;
+  }
+}
+.cicon-question-circle-o {
+  &:before {
+    content: $cicon-question-circle-o;
+  }
+}
+.cicon-blind {
+  &:before {
+    content: $cicon-blind;
+  }
+}
+.cicon-audio-description {
+  &:before {
+    content: $cicon-audio-description;
+  }
+}
+.cicon-volume-control-phone {
+  &:before {
+    content: $cicon-volume-control-phone;
+  }
+}
+.cicon-braille {
+  &:before {
+    content: $cicon-braille;
+  }
+}
+.cicon-assistive-listening-systems {
+  &:before {
+    content: $cicon-assistive-listening-systems;
+  }
+}
+.cicon-american-sign-language-interpreting {
+  &:before {
+    content: $cicon-american-sign-language-interpreting;
+  }
+}
+.cicon-asl-interpreting {
+  &:before {
+    content: $cicon-asl-interpreting;
+  }
+}
+.cicon-deaf {
+  &:before {
+    content: $cicon-deaf;
+  }
+}
+.cicon-deafness {
+  &:before {
+    content: $cicon-deafness;
+  }
+}
+.cicon-hard-of-hearing {
+  &:before {
+    content: $cicon-hard-of-hearing;
+  }
+}
+.cicon-glide {
+  &:before {
+    content: $cicon-glide;
+  }
+}
+.cicon-glide-g {
+  &:before {
+    content: $cicon-glide-g;
+  }
+}
+.cicon-sign-language {
+  &:before {
+    content: $cicon-sign-language;
+  }
+}
+.cicon-signing {
+  &:before {
+    content: $cicon-signing;
+  }
+}
+.cicon-low-vision {
+  &:before {
+    content: $cicon-low-vision;
+  }
+}
+.cicon-viadeo {
+  &:before {
+    content: $cicon-viadeo;
+  }
+}
+.cicon-viadeo-square {
+  &:before {
+    content: $cicon-viadeo-square;
+  }
+}
+.cicon-snapchat {
+  &:before {
+    content: $cicon-snapchat;
+  }
+}
+.cicon-snapchat-ghost {
+  &:before {
+    content: $cicon-snapchat-ghost;
+  }
+}
+.cicon-snapchat-square {
+  &:before {
+    content: $cicon-snapchat-square;
+  }
+}
+.cicon-pied-piper {
+  &:before {
+    content: $cicon-pied-piper;
+  }
+}
+.cicon-first-order {
+  &:before {
+    content: $cicon-first-order;
+  }
+}
+.cicon-yoast {
+  &:before {
+    content: $cicon-yoast;
+  }
+}
+.cicon-themeisle {
+  &:before {
+    content: $cicon-themeisle;
+  }
+}
+.cicon-google-plus-circle {
+  &:before {
+    content: $cicon-google-plus-circle;
+  }
+}
+.cicon-google-plus-official {
+  &:before {
+    content: $cicon-google-plus-official;
+  }
+}
+.cicon-fa {
+  &:before {
+    content: $cicon-fa;
+  }
+}
+.cicon-font-awesome {
+  &:before {
+    content: $cicon-font-awesome;
+  }
+}
+

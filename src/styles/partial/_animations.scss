@@ -1,0 +1,42 @@
+@import 'variables';
+
+//
+.mf-ani-fade-enter-active,
+.mf-ani-fade-leave-active {
+  transition: opacity $d-time-xs linear;
+}
+.mf-ani-fade-enter,
+.mf-ani-fade-leave-active {
+  opacity: 0;
+}
+
+.mf-ani-fade--m-enter-active,
+.mf-ani-fade--m-leave-active {
+  transition: opacity $d-time-m linear;
+}
+.mf-ani-fade--m-enter,
+.mf-ani-fade--m-leave-active {
+  opacity: 0;
+}
+
+.mf-ani-fade-in-enter-active {
+  transition: opacity $d-time-xs linear;
+}
+.mf-ani-fade-in-leave-active {
+  transition: none;
+}
+.mf-ani-fade-in-enter,
+.mf-ani-fade-in-leave-active {
+  opacity: 0;
+}
+
+.mf-ani-fade-out-enter-active {
+  transition: none;
+}
+.mf-ani-fade-out-leave-active {
+  transition: opacity $d-time-xs linear;
+}
+.mf-ani-fade-out-enter,
+.mf-ani-fade-out-leave-active {
+  opacity: 0;
+}

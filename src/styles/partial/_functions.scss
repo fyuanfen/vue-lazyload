@@ -1,0 +1,62 @@
+@import './variables';
+
+@function respond-name-to-px($name) {
+  @if $name == xxs {
+    @return $d-mq-xxs;
+  } @else if $name == xs {
+    @return $d-mq-xs;
+  } @else if $name == s {
+    @return $d-mq-s;
+  } @else if $name == m {
+    @return $d-mq-m;
+  } @else if $name == l {
+    @return $d-mq-l;
+  } @else if $name == xl {
+    @return $d-mq-xl;
+  } @else {
+    @return $name;
+  }
+}
+
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+// Convert pixels to rems
+// eg. for a relational value of 12px write rem(12)
+// Assumes $em-base is the font-size of <html>
+
+@function rem($pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-unit($pxval);
+  }
+
+  $base: $d-font-baseSize;
+  @if not unitless($base) {
+    $base: strip-unit($base);
+  }
+  @return ($pxval / $base) * 1rem;
+}
+
+
+@function state-color($color, $state: 'active') {
+  $errorColor: red;
+  @if type-of($color) == 'color' {
+    @if $state == 'active' {
+      @return darken($color, 10%);
+    }
+    @if $state == 'disabled' {
+      @return transparentize($color, 30%);
+    }
+    @return $errorColor;
+  } @else {
+    @return $errorColor;
+  }
+}

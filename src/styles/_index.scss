@@ -1,0 +1,22 @@
+@import 'partial/functions';
+@import 'partial/mixins';
+@import 'partial/variables';
+@import 'partial/layout';
+@import 'partial/reset';
+@import 'partial/animations';
+//
+//@import 'partial/components/button';
+//@import 'partial/components/input-text';
+//@import 'partial/components/placeholder';
+//@import 'partial/components/form-label';
+
+$icomoon-font-path: '../assets/fonts' !default;
+@import "../assets/vendors/mf-icon/style";
+
+// Global styles
+* {
+  &::selection {
+    background-color: $d-c-primary;
+    color: white;
+  }
+}

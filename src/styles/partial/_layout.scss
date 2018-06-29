@@ -1,0 +1,154 @@
+@import './functions';
+
+
+.mf-layout {
+  &__container {
+
+  }
+  &__cell {
+    display: inline-block;
+    &--card {
+      padding: rem(10);
+    }
+  }
+  &__card-wrapper {
+    margin-right: rem(-10);
+    margin-left: rem(-10);
+  }
+}
+
+// Responsive layout classes
+// For 1280 - 1 & smaller
+
+//@include respond-range(null, respond-name-to-px(xxs) - 1px) {
+//  .mf-layout {
+//    &__container {
+//      margin-left: rem(60);
+//      margin-right: rem(60);
+//      min-width: rem(1160);
+//      &--model {
+//        width: rem(460);
+//        margin-left: auto;
+//        margin-right: auto;
+//      }
+//    }
+//    &__cell {
+//      width: 25%;
+//    }
+//  }
+//}
+
+
+@include respond-to(xxs) {
+  .mf-layout {
+    &__container {
+      margin-left: rem(0);
+      margin-right: rem(0);
+      &--model {
+        width: rem(300);
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &__cell {
+      width: 50%;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .mf-layout {
+    &__container {
+      margin-left: rem(20);
+      margin-right: rem(20);
+      &--model {
+        width: rem(600);
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &__cell {
+      width: 50%;
+    }
+  }
+}
+
+@include respond-to(s) {
+  .mf-layout {
+    &__container {
+      margin-left: rem(30);
+      margin-right: rem(30);
+      &--model {
+        width: rem(800);
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &__cell {
+      width: 33%;
+    }
+  }
+}
+
+@include respond-to(m) {
+  .mf-layout {
+    &__container {
+      margin-left: rem(60);
+      margin-right: rem(60);
+      &--model {
+        width: rem(1000);
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &__cell {
+      width: 33%;
+    }
+  }
+}
+
+
+// For 1280 ~ 1580 - 1
+@include respond-to(l) {
+  .mf-layout {
+    &__container {
+      margin-left: rem(60);
+      margin-right: rem(60);
+      &--model {
+        width: rem(1200);
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &__cell {
+      width: 25%;
+    }
+  }
+}
+
+// For 1580 ~ 1920 - 1
+@include respond-to(xl) {
+  .mf-layout {
+    &__container {
+      margin-left: rem(120);
+      margin-right: rem(120);
+    }
+    &__cell {
+      width: 20%;
+    }
+  }
+}
+
+// For 1920 & bigger
+@include respond-to(xxl) {
+  .mf-layout {
+    &__container {
+      width: rem(1680);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__cell {
+      width: 20%;
+    }
+  }
+}
